@@ -1,0 +1,151 @@
+openapi: 3.0.3
+info:
+  title: "Test Fintonic API"
+  version: "1.0.0"
+tags:
+  - name: "task"
+paths:
+  /task/createTask:
+    post:
+      tags:
+        - "task"
+      summary: "Create a new task"
+      description: "Creates a new task and stores it in the database."
+      operationId: "createTask"
+      requestBody:
+        description: "TaskDto object that needs to be added"
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Task"
+      responses:
+        "201":
+          description: Task created
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Task"
+        "400":
+          $ref: "#/components/responses/BadRequest"
+        "401":
+          $ref: "#/components/responses/Unauthorized"
+        "403":
+          $ref: "#/components/responses/Forbidden"
+        "500":
+          $ref: "#/components/responses/ServerError"
+  /task/listTask:
+    get:
+      tags:
+        - "task"
+      summary: "Get list of tasks"
+      description: "Retrieves a list of tasks."
+      operationId: "getTasks"
+      responses:
+        "200":
+          description: A list of tasks
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Task"
+        "400":
+          $ref: "#/components/responses/BadRequest"
+        "401":
+          $ref: "#/components/responses/Unauthorized"
+        "403":
+          $ref: "#/components/responses/Forbidden"
+        "500":
+          $ref: "#/components/responses/ServerError"
+        "503":
+          $ref: "#/components/responses/ServiceUnavailable"
+components:
+  responses:
+    BadRequest:
+      description: Request contains incorrect syntax or cannot be processed
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Error"
+    Unauthorized:
+      description: Unauthorized
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Error"
+    Forbidden:
+      description: Forbidden
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Error"
+    ServerError:
+      description: Internal Server Errorabrir s
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Error"
+    ServiceUnavailable:
+      description: Service Unavailable
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Error"
+  schemas:
+    Error:
+      description: An object that represents an error in the API. Includes properties for a short title, detailed summary, HTTP status code, error message, and a list of associated errors.
+      type: object
+      additionalProperties: false
+      properties:
+        title:
+          description: A short, human-readable title that concisely describes the problem or operation outcome. The title string can be a maximum of 255 characters long.
+          type: string
+          maxLength: 255
+        detail:
+          description: A detailed, human-readable explanation providing more context to the problem or operation outcome. The detail string can be a maximum of 255 characters long.
+          type: string
+          maxLength: 255
+        status:
+          description: The HTTP status code applicable to this problem, expressed as an integer value between 100 and 599.
+          type: integer
+          format: int32
+          minimum: 100
+          maximum: 599
+        message:
+          description: A human-readable summary of the specific error that occurred or a message describing the outcome of the operation. This string can be a maximum of 255 characters long.
+          type: string
+          maxLength: 255
+        errors:
+          description: A list of specific error strings associated with the problem. Each item in the list is a string of a maximum of 255 characters long. The list can contain up to 100 items.
+          type: array
+          maxItems: 100
+          items:
+            type: string
+            maxLength: 255
+    Task:
+      type: object
+      additionalProperties: false
+      properties:
+        id:
+          $ref: "#/components/schemas/Id"
+        title:
+          type: string
+          description: Title of the task
+          example: "Title of task."
+        description:
+          type: string
+          description: Description of the task
+          example: "Description of task."
+        startDate:
+          $ref: "#/components/schemas/Date"
+        priority:
+          $ref: "#/components/schemas/Id"
+    Id:
+      type: integer
+      description: "Value type INT"
+      example: 1
+    Date:
+      type: string
+      description: "Date"
+      example: "2020-06-15"

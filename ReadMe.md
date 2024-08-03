@@ -113,8 +113,6 @@ Para cualquier consulta, soporte o retroalimentación sobre la **Test Fintonic A
 - **Repositorio en GitHub:** [https://github.com/foncas23/tasktest](https://github.com/foncas23/tasktest)
 - **Reportar Problemas:** [https://github.com/foncas23/tasktest/issues](https://github.com/foncas23/tasktest/issues)
 
-No dudes en ponerte en contacto con nosotros para obtener asistencia o para reportar cualquier problema que encuentres. Agradecemos tus comentarios y haremos todo lo posible para resolver tus inquietudes.
-
 
 # [EN] Test Fintonic API
 
@@ -228,5 +226,3 @@ For any inquiries, support, or feedback regarding the **Test Fintonic API**, ple
 - **Phone:** +34 666 39 09 29
 - **GitHub Repository:** [https://github.com/foncas23/tasktest](https://github.com/foncas23/tasktest)
 - **Report Issues:** [https://github.com/foncas23/tasktest/issues](https://github.com/foncas23/tasktest/issues)
-
-Feel free to reach out for assistance or to report any issues you encounter. We appreciate your feedback and will do our best to address your concerns.

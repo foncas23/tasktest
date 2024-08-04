@@ -39,7 +39,7 @@ public class TaskResponseMapper {
      * @param taskDTO the task dto
      * @return the task
      */
-    public Task mapToTaskDto(TaskDTO taskDTO){
+    public Task mapToTask(TaskDTO taskDTO){
         return Task.builder()
                 .title(taskDTO.getTitle())
                 .description(taskDTO.getDescription())

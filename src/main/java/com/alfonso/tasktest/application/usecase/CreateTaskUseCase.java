@@ -29,6 +29,6 @@ public class CreateTaskUseCase {
      * @param taskDTO the task dto
      */
     public void execute(TaskDTO taskDTO){
-        this.createTaskService.createTask(this.mapper.mapToTaskDto(taskDTO));
+        this.createTaskService.createTask(this.mapper.mapToTask(taskDTO));
     }
 }

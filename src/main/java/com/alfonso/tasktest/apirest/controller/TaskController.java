@@ -2,8 +2,10 @@ package com.alfonso.tasktest.apirest.controller;
 
 import com.alfonso.tasktest.application.usecase.CreateTaskUseCase;
 import com.alfonso.tasktest.application.usecase.GetAllTaskUseCase;
+import com.alfonso.tasktest.config.handlerexception.ApiErrorResponseBuilder;
 import com.napptilus.openapi.model.TaskDTO;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RestController;
 import com.napptilus.openapi.api.TaskApi;

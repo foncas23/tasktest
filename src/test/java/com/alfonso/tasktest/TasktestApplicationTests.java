@@ -1,12 +1,25 @@
 package com.alfonso.tasktest;
 
+
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.ApplicationContext;
+import static org.assertj.core.api.Assertions.assertThat;
 
+@SpringBootTest
+public class TasktestApplicationTests {
 
-class TasktestApplicationTests {
+	@Autowired
+	private ApplicationContext applicationContext;
 
 	@Test
-	void contextLoads() {
+	public void contextLoads() {
+		assertThat(applicationContext).isNotNull();
 	}
 
+	@Test
+	public void testTaskControllerPresence() {
+		assertThat(applicationContext.containsBean("taskController")).isTrue();
+	}
 }

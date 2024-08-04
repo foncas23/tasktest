@@ -11,7 +11,10 @@ La **Test Fintonic API** permite la gestión de tareas, incluyendo la creación 
 
 ## Configuración del proyecto
   - **Puerto por defecto:** localhost:8080
-  - **Acceder a la consola de la BBDD cuando levantamos el proyecto tendremos que poner la siguiente URL en nuestro navegador: `http://localhost:8080/h2-console` ![img_1.png](img_1.png) Deberemos introducir este valor en el campo `JDBC URL: jdbc:h2:mem:database` por defecto no hay contraseña configurada por que deberemos presionar el botón`connect` y accederemos a esta pantalla ![img_2.png](img_2.png) Desde aquí podremos ejecutar las querys que deseemos para buscar insertar borrar etc. También podremos comprobar que al levantar el proyecto se han ejecutado correctamente tanto el schema.sql como data.sql para tener datos una vez arrancado el proyecto de forma local**
+  - **Acceder a la consola de la BBDD cuando levantamos el proyecto tendremos que poner la siguiente URL en nuestro navegador: `http://localhost:8080/h2-console` 
+    ![img_1.png](img_1.png)
+
+    Deberemos introducir este valor en el campo `JDBC URL: jdbc:h2:mem:database` por defecto no hay contraseña configurada por que deberemos presionar el botón`connect` y accederemos a esta pantalla ![img_2.png](img_2.png) Desde aquí podremos ejecutar las querys que deseemos para buscar insertar borrar etc. También podremos comprobar que al levantar el proyecto se han ejecutado correctamente tanto el schema.sql como data.sql para tener datos una vez arrancado el proyecto de forma local**
   - **Base de datos:** Se ha creado un base de datos Oracle embebida en el proyecto la cual genera un la tabla `TASK` con los siguientes campos:
     ```sql
       CREATE TABLE TASK(
@@ -126,7 +129,10 @@ The **Test Fintonic API** provides task management capabilities, including creat
 
 ## Project Configuration
   - **Default Port:** localhost:8080
-  - **To access the database console when starting the project, you need to enter the following URL in your browser: `http://localhost:8080/h2-console` ![img_1.png](img_1.png) We need to enter this value in the field `JDBC URL: jdbc:h2:mem:database` By default, no password is configured, so we should press the button`connect` and we will access this screen. ![img_2.png](img_2.png) From here, we can execute any queries we wish to search, insert, delete, etc. We can also verify that both schema.sql and data.sql have been executed correctly when starting the project, ensuring that data is available once the project is running locally.**
+  - **To access the database console when starting the project, you need to enter the following URL in your browser: `http://localhost:8080/h2-console` 
+   ![img_1.png](img_1.png)
+
+    We need to enter this value in the field `JDBC URL: jdbc:h2:mem:database` By default, no password is configured, so we should press the button`connect` and we will access this screen. ![img_2.png](img_2.png) From here, we can execute any queries we wish to search, insert, delete, etc. We can also verify that both schema.sql and data.sql have been executed correctly when starting the project, ensuring that data is available once the project is running locally.**
   - **Database:** An embedded Oracle database has been created in the project, which generates the `TASK` table with the following fields:
     ```sql
     CREATE TABLE TASK(

@@ -10,7 +10,7 @@ La **Test Fintonic API** permite la gestión de tareas, incluyendo la creación 
 
 
 ## Configuración del proyecto
-- **Puerto por defecto:** 8080
+  - **Puerto por defecto:** localhost:8080
   - **Base de datos:** Se ha creado un base de datos Oracle embebida en el proyecto la cual genera un la tabla `TASK` con los siguientes campos:
     ```sql
     CREATE TABLE TASK(
@@ -124,7 +124,7 @@ The **Test Fintonic API** provides task management capabilities, including creat
 - **API Version:** 1.0.0
 
 ## Project Configuration
-- **Default Port:** 8080
+  - **Default Port:** localhost:8080
   - **Database:** An embedded Oracle database has been created in the project, which generates the `TASK` table with the following fields:
     ```sql
     CREATE TABLE TASK(

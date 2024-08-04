@@ -47,7 +47,7 @@ class TaskControllerTest {
 
             ResponseEntity<TaskDTO> response = taskController.createTask(taskDTO);
 
-            assertEquals(ResponseEntity.ok().build(), response);
+            assertEquals(HttpStatus.CREATED, response.getStatusCode());
         }
     }
 

@@ -44,7 +44,7 @@ public class TaskController implements TaskApi{
     @Override
     public ResponseEntity<TaskDTO> createTask(TaskDTO taskDTO) {
         this.createTaskUseCase.execute(taskDTO);
-        return ResponseEntity.ok().build();
+        return ResponseEntity.status(HttpStatus.CREATED).build();
     }
 
     /**

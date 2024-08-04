@@ -70,7 +70,7 @@ Este endpoint no requiere parámetros adicionales en la solicitud ya que devuelv
 
 #### Objeto Json de Respuesta esperado:
 - **Tipo de contenido:** `application/json`
-- **Cuerpo de la solicitud:** Devovlerá un lista de `Task` a continuación se muestra un ejemplo:
+- **Cuerpo de la respuesta:** Devovlerá un lista de `Task` a continuación se muestra un ejemplo:
 
   ```json
   [

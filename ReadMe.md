@@ -44,7 +44,6 @@ La **Test Fintonic API** permite la gestión de tareas, incluyendo la creación 
 
   ```json
   {
-    "id": 1,
     "title": "Title of task",
     "description": "Description of task",
     "startDate": "2020-06-15",
@@ -159,7 +158,6 @@ The **Test Fintonic API** provides task management capabilities, including creat
 
   ```json
   {
-    "id": 1,
     "title": "Title of task",
     "description": "Description of task",
     "startDate": "2020-06-15",

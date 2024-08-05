@@ -133,7 +133,7 @@ The **Test Fintonic API** provides task management capabilities, including creat
 
 ## Project Configuration
   - **Default Port:** localhost:8080
-  - **To access the database console when starting the project, you need to enter the following URL in your browser: `http://localhost:8080/h2-console` 
+  - **To access the database console when starting the project, you need to enter the following URL in your browser: `http://localhost:8080/h2-console`**
    
       ![img_1.png](img_1.png)
 

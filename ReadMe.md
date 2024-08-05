@@ -11,7 +11,7 @@ La **Test Fintonic API** permite la gestión de tareas, incluyendo la creación 
 
 ## Configuración del proyecto
   - **Puerto por defecto:** localhost:8080
-  - **Acceder a la consola de la BBDD cuando levantamos el proyecto tendremos que poner la siguiente URL en nuestro navegador: `http://localhost:8080/h2-console` 
+  - **Acceder a la consola de la BBDD cuando levantamos el proyecto tendremos que poner la siguiente URL en nuestro navegador: `http://localhost:8080/h2-console`** 
     
     ![img_1.png](img_1.png)
 
